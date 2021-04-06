@@ -3,7 +3,9 @@
 ## General
 
 ---
-####Q1:What is the importance of simulation in the testing of autonomous systems? What additional items do you need to consider in order to leverage this type of testing (or training) to real-world environments?
+###Q1:
+
+What is the importance of simulation in the testing of autonomous systems? What additional items do you need to consider in order to leverage this type of testing (or training) to real-world environments?
 
 ####A:
 Currently, a lot of research and development is underway for autonomous driving systems, but various test environments are required to commercialize them as a system with high stability. If you test in a real environment, as you know, there is a drawback that it consumes a lot of time and money. However, if you use simulations similar to real-world environments, you can develop various algorithms as well as mitigate the shortcomings. In addition, the cognitive, judgment, and control algorithms used in the simulation must be designed in consideration of the actual environment.
