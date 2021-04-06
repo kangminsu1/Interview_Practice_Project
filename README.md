@@ -3,8 +3,7 @@
 ## General
 
 ---
-####Q1:
-####What is the importance of simulation in the testing of autonomous systems? What additional items do you need to consider in order to leverage this type of testing (or training) to real-world environments?
+####Q1:What is the importance of simulation in the testing of autonomous systems? What additional items do you need to consider in order to leverage this type of testing (or training) to real-world environments?
 
 ####A:
 Currently, a lot of research and development is underway for autonomous driving systems, but various test environments are required to commercialize them as a system with high stability. If you test in a real environment, as you know, there is a drawback that it consumes a lot of time and money. However, if you use simulations similar to real-world environments, you can develop various algorithms as well as mitigate the shortcomings. In addition, the cognitive, judgment, and control algorithms used in the simulation must be designed in consideration of the actual environment.
@@ -12,8 +11,7 @@ Currently, a lot of research and development is underway for autonomous driving 
 ## Mandatory
 
 ---
-####Q2: 
-####What are some of the advantages & disadvantages of cameras, lidar and radar? What combination of these (and other sensors) would you use to ensure appropriate and accurate perception of the environment?
+####Q2:What are some of the advantages & disadvantages of cameras, lidar and radar? What combination of these (and other sensors) would you use to ensure appropriate and accurate perception of the environment?
 
 ####A:
 Camera: A camera is basically a sensor that grabs multiple color points in space and arranges them into an image, also known as image array. These image arrays are converted into digital signals and passed to hardware that performs sensor fusion and scene understanding.
@@ -24,8 +22,7 @@ Radar: Radar has existed forever. It is similar to LiDAR in that it is a "point-
 
 <img src = "./imgs/ADAS.JPG"/>
 
-####Q3:
-####Describe the overall process of how a basic Kalman Filter works. Where might a basic Kalman Filter be less than sufficient? How can you improve the basic algorithm to improve performance in such a situation?
+####Q3:Describe the overall process of how a basic Kalman Filter works. Where might a basic Kalman Filter be less than sufficient? How can you improve the basic algorithm to improve performance in such a situation?
 
 ####A:
 The Kalman filter, also known as linear quadratic estimation, is an algorithm that helps you get a reliable estimate from the values ​​measured by the sensor. Typically, it is used to track the position and speed of a moving vehicle or pedestrian over a certain period of time, and to measure the associated uncertainty. It basically consists of repeating prediction and updating.
@@ -41,14 +38,12 @@ The prediction error starts with a large error and then gradually decreases thro
 
 <img src = "./imgs/KF.JPG"/>
 
-####Q4: 
-####How does an Extended Kalman Filter differ from a regular Kalman Filter? Provide an example of where an EKF would be necessary or improvement, and detail why it would be needed in that situation.
+####Q4:How does an Extended Kalman Filter differ from a regular Kalman Filter? Provide an example of where an EKF would be necessary or improvement, and detail why it would be needed in that situation.
 
 ####A:
 Extended Kalman filters use a linear approximation approach to regular Kalman filters. Extended Kalman filter and Kalman filter equations used if the result is not Gaussian like radar/rider is not available via Taylor series expansion. Lidar provides distance in a Cartesian coordinate system, whereas radar provides distance and speed in a polar coordinate system.
 
-####Q5:
-####What is the difference between an Extended Kalman Filter and an Unscented Kalman Filter? In what situations would there be larger differences between the two approaches?
+####Q5:What is the difference between an Extended Kalman Filter and an Unscented Kalman Filter? In what situations would there be larger differences between the two approaches?
 
 ####A:
 The difference between EKF and UKF is, first of all, EKF has only one point, mean and approximation, but UKF has several points called sigma points, so it has higher accuracy than EKF. In addition to the sigma points, there are weights, and the estimates estimated through them are calculated more similarly.
@@ -58,8 +53,7 @@ The difference between EKF and UKF is, first of all, EKF has only one point, mea
 ##Code
 
 ___
-####Q6:
-####Explain the steps behind how an Extended Kalman Filter is implemented.
+####Q6:Explain the steps behind how an Extended Kalman Filter is implemented.
 
 ####A:
 Refer to the code in the folder above and refer to Extended Kalman Filter.
