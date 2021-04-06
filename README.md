@@ -3,7 +3,7 @@
 ## General
 
 ---
-###Q1:
+### Q1:
 
 What is the importance of simulation in the testing of autonomous systems? What additional items do you need to consider in order to leverage this type of testing (or training) to real-world environments?
 
